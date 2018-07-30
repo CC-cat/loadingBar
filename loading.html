@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+
+   <head>
+      <meta charset="utf-8">
+      <title></title>
+      <link rel="stylesheet" type="text/css" href="loading-bar.css" />
+      <script type="text/javascript" src="loading-bar.js"></script>
+      <style>
+         /* ldBar-label: 标签样式 [默认所有] */
+
+         .ldBar-label {
+            /* color: red;
+            font-family: tahoma;
+            font-size: 2.1em;
+            font-weight: 900 */
+         }
+
+         .ldBar-label:after {
+            /* content: "USD" color: #aaa;
+            margin-left: 5px;
+            font-family: courier new;
+            font-size: 0.7em;
+            font-weight: 200; */
+         }
+
+         .ldBar {
+            margin: 30px 10px;
+            float: left;
+         }
+
+
+         /* 自定义class，修改样式 */
+
+         .l-1 {
+            color: lightBlue;
+            font-family: tahoma;
+            font-weight: 100
+         }
+
+      </style>
+   </head>
+
+   <body>
+      <section>
+         <div class="ldBar label-center" data-preset="bubble" data-value="80" data-pattern-size="150"></div>
+         <div class="ldBar label-center" data-preset="circle" data-value="80"></div>
+         <div class="ldBar label-center" data-preset="fan" data-value="30"></div>
+         <div class="ldBar" data-preset="line" data-value="80"></div>
+         <div class="ldBar" data-preset="rainbow" data-value="80"></div>
+         <div class="ldBar" data-preset="energy" data-value="80"></div>
+         <div class="ldBar" data-preset="stripe" data-value="80"></div>
+         <div class="ldBar" data-preset="text" data-value="20"></div>
+
+
+      </section>
+      <div class="ldBar label-center l-1" data-preset="circle" data-value="50"></div>
+      <!--
+
+      data-preset: loading图案类型
+      label-center: 文字显示在中间
+      data-value: loading值
+
+      data-pattern-size: 气泡的大小
+       -->
+
+
+      <!--
+   svg: blob:https://loading.io/59fbc665-340c-40ed-a448-f52e9a3fc9c3
+
+     -->
+   </body>
+
+</html>

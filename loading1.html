@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title></title>
+		<style type="text/css">
+			#loading {
+				opacity: .8;
+				filter: alpha(opacity=80);
+				position: fixed;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: 99999;
+				background-color: #000;
+			}
+
+			.tp-loader {
+				top: 50%;
+				left: 50%;
+				z-index: 10000;
+				position: absolute;
+			}
+
+			.tp-loader.spinner4 {
+				margin: -20px 0 0 -20px;
+				width: 40px;
+				height: 40px;
+				text-align: center;
+				-webkit-animation: tp-rotate 2s infinite linear;
+				animation: tp-rotate 2s infinite linear
+			}
+
+			.tp-loader.spinner4 .dot1,
+			.tp-loader.spinner4 .dot2 {
+				width: 60%;
+				height: 60%;
+				display: inline-block;
+				position: absolute;
+				top: 0;
+				background-color: #fff;
+				border-radius: 100%;
+				-webkit-animation: tp-bounce 2s infinite ease-in-out;
+				animation: tp-bounce 2s infinite ease-in-out;
+				box-shadow: 0 0 20px 0 rgba(0, 0, 0, .15);
+				-webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, .15)
+			}
+
+			.tp-loader.spinner4 .dot2 {
+				top: auto;
+				bottom: 0;
+				-webkit-animation-delay: -1s;
+				animation-delay: -1s
+			}
+
+			@-webkit-keyframes tp-rotate {
+				to {
+					-webkit-transform: rotate(1turn)
+				}
+			}
+
+			@keyframes tp-rotate {
+				to {
+					transform: rotate(1turn);
+					-webkit-transform: rotate(1turn)
+				}
+			}
+
+			@-webkit-keyframes tp-bounce {
+				0%,
+				to {
+					-webkit-transform: scale(0)
+				}
+				50% {
+					-webkit-transform: scale(1)
+				}
+			}
+
+			@keyframes tp-bounce {
+				0%,
+				to {
+					transform: scale(0);
+					-webkit-transform: scale(0)
+				}
+				50% {
+					transform: scale(1);
+					-webkit-transform: scale(1)
+				}
+			}
+
+		</style>
+	</head>
+
+	<body>
+		<div id="loading" style="display: block;">
+			<div class="tp-loader spinner4" style="display:block">
+				<div class="dot1"></div>
+				<div class="dot2"></div>
+				<div class="bounce1"></div>
+				<div class="bounce2"></div>
+				<div class="bounce3"></div>
+			</div>
+		</div>
+	</body>
+
+</html>
